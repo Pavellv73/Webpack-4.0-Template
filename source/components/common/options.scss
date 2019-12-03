@@ -1,0 +1,88 @@
+// @media
+/* stylelint-disable */
+$breakpoints: (
+  "phone":        430px, // 320
+  "tablet":       1000px, // 640
+  "tablet-wide":  1250px, // 1024
+  "desktop":      1850px, // 1366
+  "desktop-wide": 2350px, // 1920
+); // 2560
+
+@mixin mq($width, $widthMax: false) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @if ($widthMax !=  false) {
+      $widthMax: map_get($breakpoints, $widthMax);
+
+      @media only screen and (max-width: $width - 1) and (min-width: $widthMax) {
+        @content;
+      }
+    }
+
+    @else {
+      @media only screen and (max-width: $width - 1) {
+        @content;
+      }
+    }
+  }
+}
+
+// z-index
+$z-indexes: (
+  "header",
+  "main",
+  "footer"
+);
+
+@function z($name) {
+  @if index($z-indexes, $name) {
+    @return (length($z-indexes) - index($z-indexes, $name)) + 2;
+  }
+
+  @else {
+    @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+    @return null;
+  }
+}
+
+//rem
+@function rem($breackpoints, $size) {
+  @return $size/$breackpoints * 100 * 1rem;
+}
+
+// Расчитываем процент ребенка относительно родителя
+@function p($parent,$child) {
+  @return ($child * 100%) / $parent;
+}
+
+@function vw($parent,$child) {
+  @return ($child * 100vw) / $parent;
+}
+
+@function vh($parent,$child) {
+  @return ($child * 100vh) / $parent;
+}
+
+@function vmin($parent,$child) {
+  @return ($child * 100vmin) / $parent;
+}
+
+//Hover only mouse devices
+@mixin hover($type: "") {
+  @if ($type != "") {
+    body.theme-#{$type}:not(.is-touch) &:hover {
+      @content;
+    }
+  }
+
+  @else {
+    body:not(.is-touch) &:hover {
+      @content;
+    }
+  }
+}
+
+/* stylelint-enable  */
+
+/* colors */

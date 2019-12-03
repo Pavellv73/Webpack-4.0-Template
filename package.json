@@ -1,0 +1,58 @@
+{
+  "name": "apollo",
+  "version": "1.0.0",
+  "description": "More show",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mst-dev-ops/skillbox/apollo.git"
+  },
+  "dependencies": {
+    "object-fit-images": "^3.2.3",
+    "picturefill": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/runtime": "^7.3.1",
+    "@types/jquery": "^3.3.10",
+    "autoprefixer": "^8.0.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^0.28.10",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.9",
+    "group-css-media-queries-loader": "^1.0.4",
+    "html-loader": "^0.5.5",
+    "imports-loader": "^0.8.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^2.1.0",
+    "pug-html-loader": "^1.1.5",
+    "pug-lint": "^2.5.0",
+    "sass-loader": "^6.0.6",
+    "stylelint": "^9.10.1",
+    "stylelint-webpack-plugin": "^0.10.3",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.5"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.js --env.development --color --progress",
+    "build": "npm run clear && webpack --config webpack.config.js",
+    "eslint": "eslint ./**/*.js",
+    "stylelint": "stylelint ./**/*.scss",
+    "puglint": "pug-lint ./source/",
+    "clear": "rimraf ./distribution/*"
+  },
+  "author": {
+    "name": "MST",
+    "email": "mail@mstagency.ru",
+    "url": "https://mst.agency/"
+  },
+  "license": "UNLICENSED"
+}

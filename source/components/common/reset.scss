@@ -1,0 +1,315 @@
+/* Задаём стандартные значения всем элементам
+-------------------------------------------------------------------------------*/
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: 400;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+main,
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+/* Свойства width и height включают в себя значения полей и границ, но не отступов (margin).
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+   Показываем вертикальную полоску прокрутки, чтобы предотвратить перескакивание страницы */
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  cursor: default;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Установка по умолчанию значений на cursor: https://gist.github.com/murtaugh/5247154 */
+body {
+  cursor: default;
+}
+
+code {
+  cursor: text;
+}
+
+/* textarea и input[type="text"] получают "cursor: text" всеми браузерами по умолчанию */
+
+a,
+label,
+button,
+input[type="radio"],
+input[type="submit"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* Адаптивные изображения и другие внедряемые объекты */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* Мы используем много ul, которые не маркированы. Вам придётся востановить маркеры внутри контента. Что хорошо, потому что они должны быть настроены в любом случае */
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* Для таблиц по прежнему требуется cellspacing="0" */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: inherit;
+}
+
+th {
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: 400;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+select,
+input,
+textarea {
+  font: 99% sans-serif;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: 700;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
+
+/* http://gist.github.com/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Стандартизировать любые моноширинные элементы */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+/* Наведение курсора на элементы, которые можно щелкнуть */
+.clickable,
+label,
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+button {
+  cursor: pointer;
+}
+
+/* Браузеры Webkit добавляют 2px поле вне хром элементов формы */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* Отображаем в нормальном виде кнопки в IE */
+button,
+input[type="button"] {
+  width: auto;
+  overflow: visible;
+}
+
+/* Очистка float элементов */
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Scrollbar */
+.scroll-content ~ .scrollbar-track .scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  background: black;
+  border-radius: 0;
+  margin-left: 8px;
+}
+
+.scroll-content ~ .scrollbar-track-y {
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999;
+  padding-right: 2px;
+  width: 10px;
+  background: transparent;
+}

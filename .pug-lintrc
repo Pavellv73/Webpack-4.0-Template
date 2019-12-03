@@ -1,0 +1,48 @@
+{
+  "disallowAttributeConcatenation": true,
+  "disallowAttributeInterpolation": null,
+  "disallowAttributeTemplateString": null,
+  "disallowBlockExpansion": true,
+  "disallowClassAttributeWithStaticValue": true,
+  "disallowClassLiteralsBeforeAttributes": null,
+  "disallowClassLiteralsBeforeIdLiterals": true,
+  "disallowClassLiterals": null,
+  "disallowDuplicateAttributes": true,
+  "disallowHtmlText": null,
+  "disallowIdAttributeWithStaticValue": true,
+  "disallowIdLiteralsBeforeAttributes": null,
+  "disallowIdLiterals": null,
+  "disallowLegacyMixinCall": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowSpacesInsideAttributeBrackets": true,
+  "disallowSpecificAttributes": null,
+  "disallowSpecificTags": null,
+  "disallowStringConcatenation": null,
+  "disallowStringInterpolation": true,
+  "disallowTagInterpolation": true,
+  "disallowTemplateString": null,
+  "disallowTrailingSpaces": true,
+  "maximumLineLength": null,
+  "maximumNumberOfLines": null,
+  "requireClassLiteralsBeforeAttributes": true,
+  "requireClassLiteralsBeforeIdLiterals": null,
+  "requireIdLiteralsBeforeAttributes": true,
+  "requireLineFeedAtFileEnd": true,
+  "requireLowerCaseAttri`butes": true,
+  "requireLowerCaseTags": true,
+  "requireSpecificAttributes": [
+    {
+      "img": [
+        "alt"
+      ]
+    }
+  ],
+  "requireStrictEqualityOperators": true,
+  "validateAttributeSeparator": ", ",
+  "validateDivTags": true,
+  "validateExtensions": true,
+  "validateIndentation": 2,
+  "validateLineBreaks": "LF",
+  "validateSelfClosingTags": true,
+  "validateTemplateString": true
+}

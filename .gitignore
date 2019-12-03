@@ -1,0 +1,38 @@
+/node_modules/
+/test/
+/build/
+/builds/
+/public/
+/distribution/
+
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs #
+*.log
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE #
+.git/
+.idea/
+.settings/
+.vs/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.lock
