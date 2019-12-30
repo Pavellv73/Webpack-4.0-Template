@@ -1,6 +1,4 @@
-#Apollo
-
-Apollo
+#Webpack 4.0
 
 ## INSTALLATION
 
