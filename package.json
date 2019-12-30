@@ -1,11 +1,11 @@
 {
-  "name": "apollo",
+  "name": "Webpack 4.0",
   "version": "1.0.0",
-  "description": "More show",
+  "description": "Description",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/mst-dev-ops/skillbox/apollo.git"
+    "url": "git+https://github.com/Pavellv73/Webpack-4.0.git"
   },
   "dependencies": {
     "object-fit-images": "^3.2.3",
@@ -50,9 +50,8 @@
     "clear": "rimraf ./distribution/*"
   },
   "author": {
-    "name": "MST",
-    "email": "mail@mstagency.ru",
-    "url": "https://mst.agency/"
+    "name": "Pavellv",
+    "email": "pavel.lv.emails@gmail.com",
   },
   "license": "UNLICENSED"
 }
