@@ -1,5 +1,5 @@
 {
-  "name": "Webpack 4.0",
+  "name": "Webpack-4.0",
   "version": "1.0.0",
   "description": "Description",
   "private": true,
@@ -42,7 +42,7 @@
     "webpack-dev-server": "^2.11.5"
   },
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.js --env.development --color --progress",
+    "dev": "webpack-dev-server --config webpack.config.js --env.development --progress",
     "build": "npm run clear && webpack --config webpack.config.js",
     "eslint": "eslint ./**/*.js",
     "stylelint": "stylelint ./**/*.scss",
@@ -51,7 +51,7 @@
   },
   "author": {
     "name": "Pavellv",
-    "email": "pavel.lv.emails@gmail.com",
+    "email": "pavel.lv.emails@gmail.com"
   },
   "license": "UNLICENSED"
 }
