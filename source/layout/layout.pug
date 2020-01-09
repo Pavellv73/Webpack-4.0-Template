@@ -2,13 +2,9 @@ doctype html
 html(lang='ru', dir='ltr')
   head
     block head
+      include head.pug
+      link(href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap", rel="stylesheet")
   body
     block header
     block body
-
     block footer
-
-    block styles
-
-    block scripts
-      script(type='text/javascript', src='assets/scripts/common.js')

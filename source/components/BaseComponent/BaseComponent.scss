@@ -1,0 +1,10 @@
+@import "../common/options";
+
+.baseComponent {
+  position: relative;
+  height: 100%;
+
+  &__title {
+    font-size: 20px;
+  }
+}

@@ -3,8 +3,8 @@
 $breakpoints: (
   "phone":        430px, // 320
   "tablet":       1000px, // 640
-  "tablet-wide":  1250px, // 1024
-  "desktop":      1850px, // 1366
+  "tablet-wide":  1366px, // 1024
+  "desktop":      1550px, // 1366
   "desktop-wide": 2350px, // 1920
 ); // 2560
 
@@ -30,9 +30,8 @@ $breakpoints: (
 
 // z-index
 $z-indexes: (
-  "header",
+  "popup"
   "main",
-  "footer"
 );
 
 @function z($name) {

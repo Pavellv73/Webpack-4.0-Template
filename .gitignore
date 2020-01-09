@@ -4,6 +4,7 @@
 /builds/
 /public/
 /distribution/
+/dist/
 
 # Packages #
 *.7z

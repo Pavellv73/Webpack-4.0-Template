@@ -1,6 +1,5 @@
-@import "./reset";
+@import "./reset.scss";
 @import "./options.scss";
-// @import "../../../node_modules/swiper/dist/css/swiper.min.css";
 
 *,
 *::before,
@@ -23,70 +22,13 @@ body {
   min-width: 320px;
 }
 
-body {
-  display: flex;
-  flex-flow: column nowrap;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-header {
-  flex: 0 0 auto;
+.baseContainer {
+  height: 100%;
 }
 
 main {
-  flex: 1 0 auto;
-  padding-top: 110px;
   position: relative;
-  z-index: z("main");
-
-  @include mq("desktop-wide", "tablet") {
-    padding-top: 82px;
-  }
-
-  @include mq("tablet", "phone") {
-    padding-top: 70px;
-  }
-
-  @include mq("phone") {
-    padding-top: 60px;
-  }
-}
-
-footer {
-  flex: 0 0 auto;
-}
-
-
-// Отключение желтого фона на автозаполнении
-@keyframes autofill {
-  to {
-    color: #000;
-    background: transparent;
-  }
-}
-
-input:-webkit-autofill {
-  animation-name: autofill;
-  animation-fill-mode: both;
-}
-
-.lazy {
-  img {
-    opacity: 0;
-  }
-
-  &--loaded {
-    img {
-      opacity: 1;
-      transition: 0.4s opacity ease;
-    }
-  }
-
-  &--error {
-    img {
-      opacity: 1;
-      transition: 0.4s opacity ease 0.5s;
-    }
-  }
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }

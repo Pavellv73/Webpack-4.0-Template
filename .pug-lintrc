@@ -1,48 +1,50 @@
 {
-  "disallowAttributeConcatenation": true,
-  "disallowAttributeInterpolation": null,
-  "disallowAttributeTemplateString": null,
-  "disallowBlockExpansion": true,
+  "disallowAttributeConcatenation": null,
+  "disallowAttributeInterpolation": true,
+  "disallowBlockExpansion": null,
   "disallowClassAttributeWithStaticValue": true,
-  "disallowClassLiteralsBeforeAttributes": null,
-  "disallowClassLiteralsBeforeIdLiterals": true,
   "disallowClassLiterals": null,
+  "disallowClassLiteralsBeforeAttributes": null,
+  "disallowClassLiteralsBeforeIdLiterals": null,
   "disallowDuplicateAttributes": true,
   "disallowHtmlText": null,
-  "disallowIdAttributeWithStaticValue": true,
+  "disallowIdAttributeWithStaticValue": null,
+  "disallowIdLiterals": true,
   "disallowIdLiteralsBeforeAttributes": null,
-  "disallowIdLiterals": null,
-  "disallowLegacyMixinCall": true,
   "disallowMultipleLineBreaks": true,
+  "disallowSpaceAfterCodeOperator": null,
   "disallowSpacesInsideAttributeBrackets": true,
-  "disallowSpecificAttributes": null,
+  "disallowSpecificAttributes": [
+    { "a": "name" }
+  ],
   "disallowSpecificTags": null,
-  "disallowStringConcatenation": null,
-  "disallowStringInterpolation": true,
-  "disallowTagInterpolation": true,
-  "disallowTemplateString": null,
-  "disallowTrailingSpaces": true,
-  "maximumLineLength": null,
+  "disallowStringConcatenation": true,
+  "disallowStringInterpolation": null,
+  "disallowTagInterpolation": null,
   "maximumNumberOfLines": null,
   "requireClassLiteralsBeforeAttributes": true,
-  "requireClassLiteralsBeforeIdLiterals": null,
+  "requireClassLiteralsBeforeIdLiterals": true,
   "requireIdLiteralsBeforeAttributes": true,
   "requireLineFeedAtFileEnd": true,
-  "requireLowerCaseAttri`butes": true,
+  "requireLowerCaseAttributes": true,
   "requireLowerCaseTags": true,
+  "requireSpaceAfterCodeOperator": true,
+  "requireSpacesInsideAttributeBrackets": null,
   "requireSpecificAttributes": [
-    {
-      "img": [
-        "alt"
-      ]
-    }
+    { "form": "action" },
+    { "img": "alt" },
+    { "input": "type" },
+    { "input[type=submit]": "value" }
   ],
   "requireStrictEqualityOperators": true,
-  "validateAttributeSeparator": ", ",
+  "validateAttributeQuoteMarks": null,
+  "validateAttributeSeparator": {
+    "separator": ", ",
+    "multiLineSeparator": "\n  "
+  },
   "validateDivTags": true,
   "validateExtensions": true,
   "validateIndentation": 2,
   "validateLineBreaks": "LF",
-  "validateSelfClosingTags": true,
-  "validateTemplateString": true
+  "validateSelfClosingTags": true
 }

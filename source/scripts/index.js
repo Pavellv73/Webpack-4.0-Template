@@ -1,3 +1,1 @@
-import './common';
-
-import '../pages/index.pug';
+import '../components/BaseComponent/BaseComponent';

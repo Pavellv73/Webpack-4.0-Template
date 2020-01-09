@@ -127,7 +127,12 @@
         "define-mixin",
         "include",
         "content",
-        "rules"
+        "rules",
+        "if",
+        "else",
+        "return",
+        "function",
+        "warn"
       ]
     }],
     "at-rule-no-vendor-prefix": true,
