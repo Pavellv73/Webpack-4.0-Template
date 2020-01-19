@@ -1,6 +1,4 @@
-#Webpack 4.0
-
-Webpack 4.0
+#Шаблон сборки на Webpack 4.
 
 ## INSTALLATION
 
@@ -47,8 +45,27 @@ Webpack 4.0
 2.  Запускаем билд проекта `npm run build`;
 3.  Переходим в папку distribution в проекте, открываем html-файл в редакторе;
 4.  Выполняем поиск и замену:
-``` 
+```
 Ищем: /content
 Заменяем на: ./content
 ```
 5.  Из корня проекта копируем папку content, вставляем ее в папку distribution;
+
+
+## Plugins
+
+1. cssnano
+2. pug
+3. scss
+4. resolve-url
+5. postcss
+6. cache
+7. thread
+8. autoprefixer
+
+
+### Lints
+
+1. eslint
+2. stylelint
+3. puglint
